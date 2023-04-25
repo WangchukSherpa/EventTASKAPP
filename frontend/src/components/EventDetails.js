@@ -29,7 +29,7 @@ return(
     <div className="event-details">
         <h4>{event.title}</h4>
         <p><strong>Description: </strong>{event.description}</p>
-        <p><strong>Date: </strong>{event.date}</p>
+        <p><strong>Date: </strong>{event.date.toString()}</p>
         <p>{formatDistanceToNow(new Date(event.createdAt), { addSuffix: true })}</p>
         <span className='material-symbols-outlined' onClick={handleClick}>delete</span>
     </div>
